@@ -1,0 +1,2 @@
+condMax=arr[i];
+            
