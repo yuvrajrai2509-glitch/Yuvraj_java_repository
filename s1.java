@@ -1,0 +1,33 @@
+
+import java.util.Scanner;
+
+class s1{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringBuilder str=new StringBuilder(sc.nextLine());
+     
+        for(int i=0;i<str.length();i++){
+            System.out.print(str.length());
+          //  System.out.print(str.length);
+        // char ch=str.charAt(i);
+         boolean small=true;
+         char ch=str.charAt(i);
+         int asci=(int)ch;
+         if(asci>=97)small=false;//flag means small//space print ho uske liyeif(ch'==')continue;)
+        
+        if(small==true){
+            asci+=32;
+            char dh=(char)asci;
+            str.setCharAt(i,dh);
+        }
+        else{
+             asci-=32;
+            char dh=(char)asci;
+            str.setCharAt(i,dh);
+
+        }
+        System.out.print(str);
+        }
+
+    }
+}
